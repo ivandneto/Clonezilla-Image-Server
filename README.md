@@ -84,11 +84,7 @@ DRBL Official:
 
 ---
 
-# 📬 Autor
+## ✨ Autor
 
-**Ivan de Souza Neto**  
-Repositório mantido para estudo, documentação de laboratórios e uso profissional.
+Documentação reorganizada por **Ivan (GitHub)** com auxílio de inteligência artificial para preservação histórica e uso profissional.
 
----
-
-> Este repositório é totalmente livre para consulta, modificação e uso profissional, respeitando a licença VL-Documentação incluída em `LICENSE.md`.

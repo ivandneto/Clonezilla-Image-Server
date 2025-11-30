@@ -3,29 +3,27 @@ Documentação revisada, reorganizada e completamente reestruturada sobre **Clon
 
 O objetivo deste repositório é facilitar o acesso ao conteúdo, melhorar a legibilidade, organizar o passo a passo e preservar informações importantes para estudo técnico, uso profissional e futuras consultas.
 
----
+
 
 # 📁 Estrutura da Documentação
 
 A documentação está organizada em páginas individuais dentro de `/docs`, com imagens correspondentes em `/images`.
 
-´´´´
+
+```
+## 📘 Estrutura da Documentação
 Clonezilla-Image-Server/
 ├── README.md
 ├── LICENSE.md
 ├── docs/
-│   ├── parte2-pagina-1.md   (DRBL e Clonezilla SE — Introdução)
-│   ├── parte2-pagina-2.md   (Preparando o Servidor Clonezilla SE)
-│   ├── parte2-pagina-3.md   (Configuração DRBL + Clonezilla SE)
-│   ├── parte2-pagina-4.md   (Clonagem de discos pela rede — PXE)
-│   └── parte2-pagina-5.md   (Restauração de imagens pela rede)
+│ ├── parte2-pagina-1.md   (DRBL e Clonezilla SE — Introdução)
+│ ├── parte2-pagina-2.md   (Preparando o Servidor Clonezilla SE)
+│ ├── parte2-pagina-3.md   (Configuração DRBL + Clonezilla SE)
+│ ├── parte2-pagina-4.md   (Clonagem de discos pela rede — PXE)
+│ ├── parte2-pagina-5.md   (Restauração de imagens pela rede)
 └── images/
-    ├── pagina-1/
-    ├── pagina-2/
-    ├── pagina-3/
-    ├── pagina-4/
-    └── pagina-5/
-´´´´
+└── pagina-X/ (imagens organizadas por capítulo)
+```
 
 ---
 

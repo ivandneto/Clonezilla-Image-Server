@@ -1,55 +1,98 @@
-# Parte 2 – DRBL e Clonezilla Server Edition (SE)
+# Clonezilla Server Edition (SE) — Parte 2  
+## Página 1 — DRBL e Introdução ao Clonezilla SE
 
-## Introdução
+Esta é a segunda parte da documentação sobre Clonezilla.  
+Aqui abordamos exclusivamente a instalação e configuração do **Clonezilla Server Edition (SE)**, utilizado para realizar clonagens e restaurações de discos pela rede de forma centralizada e automatizada.
 
-Esta é a segunda parte do guia completo sobre Clonezilla.  
-Aqui focaremos no **Clonezilla Server Edition (SE)** e no **DRBL**, que é a base necessária para o funcionamento do Clonezilla SE.
-
-Se ainda não leu a Parte 1, recomenda-se ler antes.
-
----
-
-# 🖥️ DRBL – Diskless Remote Boot in Linux
-
-**DRBL (Diskless Remote Boot in Linux)** é um software livre, licenciado sob GPL.  
-Ele fornece:
-
-- Boot remoto sem disco (diskless)
-- Instalação de sistemas pela rede
-- Clonezilla Server Edition (SE)
-
-O DRBL funciona de forma parecida com LTSP, usando:
-
-- **NFS** → fornece sistema e diretórios aos clientes  
-- **NIS** → autenticação e identificação  
-- Clientes processam localmente, servidor apenas fornece o sistema
+Caso ainda não tenha visto a Parte 1:  
+👉 *Clonezilla - Gerando e Restaurando Backups Completos (Parte I)*
 
 ---
 
-# 📦 Clonezilla Server Edition (SE)
+## 🧩 O que é DRBL?
 
-O Clonezilla SE permite:
+**DRBL** significa **Diskless Remote Boot in Linux**.
 
-- Clonar máquinas pela rede  
-- Restaurar imagens em unicast, multicast ou broadcast  
-- Trabalhar com grupos específicos de clientes  
-- Automatizar clonagens em massa
+Ele é um conjunto de ferramentas em software livre (licença GPL) que permite:
 
-### Modos de operação:
+- Inicializar máquinas clientes **sem uso de disco local**, via rede.
+- Inicializar sistemas Linux remotamente usando NFS + NIS.
+- Oferecer o ambiente necessário para o funcionamento do **Clonezilla SE**.
+
+### Como o DRBL funciona?
+
+O servidor DRBL fornece:
+
+- **NFS (Network File System)** → exporta diretórios necessários para o boot do cliente.
+- **NIS (Network Information Service)** → fornece autenticação e ambiente.
+
+O processamento é feito **no cliente**, não no servidor — algo diferente de LTSP, onde o servidor faz mais trabalho.
+
+---
+
+## 🧰 Clonezilla Server Edition
+
+O Clonezilla SE é a versão do Clonezilla voltada para clonagem em massa, utilizada principalmente em:
+
+- laboratórios de informática  
+- escritórios  
+- salas de aula  
+- empresas com muitos computadores  
+
+Ele opera em 3 modos:
 
 | Modo | Descrição |
 |------|-----------|
-| **Unicast** | Comunicação 1:1 entre servidor ↔ cliente |
-| **Broadcast** | Envio do servidor para *todas* máquinas |
-| **Multicast** | Envio para um *grupo* específico de máquinas |
+| **Unicast** | Comunicação 1:1 entre cliente e servidor. |
+| **Broadcast** | Servidor envia dados para *todos* os clientes conectados. |
+| **Multicast** | Servidor envia dados apenas para um *grupo específico* de máquinas. |
 
-Nesta parte do guia, trataremos exclusivamente do Clonezilla SE.
+O **multicast** é o grande diferencial do SE, ideal para restaurar/clonar dezenas de máquinas ao mesmo tempo com uso mínimo de banda.
 
 ---
 
-# 🛠️ Instalação do DRBL (Debian/Ubuntu)
+🛠️ Instalação do DRBL (Debian/Ubuntu)
 
-## 1️⃣ Adicionar repositório do DRBL
+1️⃣ Adicionar repositório do DRBL
 
-Edite:
+Edite o arquivo: /etc/apt/sources.list
 
+
+Adicione:
+
+```text
+deb http://drbl.sourceforge.net/drbl-core drbl stable
+```
+
+2️⃣ Importar a chave GPG do repositório
+
+Método recomendado:
+```
+wget -q http://drbl.nchc.org.tw/GPG-KEY-DRBL -O- | apt-key add -
+```
+
+3️⃣ Instalar o DRBL (que inclui Clonezilla SE)
+```
+apt-get update
+apt-get install drbl
+```
+
+🔄 (Opcional) Atualizar kernel via Backports
+
+Só necessário se o servidor for muito antigo.
+
+Adicione ao final do arquivo: 
+```
+echo "deb http://backports.debian.org/debian-backports squeeze-backports main contrib non-free" >> /etc/apt/sources.list
+```
+
+Aplique atualizações:
+
+```
+apt-get update
+apt-get -t squeeze-backports install linux-image-3.2.0-0.bpo.4-amd64 firmware-linux-nonfree
+```
+Reinicie o servidor e selecione o novo kernel.
+
+💡 Esta etapa é opcional.
+O Clonezilla SE funciona normalmente com o kernel padrão do Debian.

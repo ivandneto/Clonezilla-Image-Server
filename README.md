@@ -1,4 +1,4 @@
-# 📘 Guia Completo — Clonezilla Server Edition (Parte 2)
+# 📘 Guia Completo — Clonezilla - Server Edition (Parte 2)
 Documentação revisada, reorganizada e completamente reestruturada sobre **Clonezilla SE (Server Edition)** e **DRBL (Diskless Remote Boot in Linux)**, originalmente publicada na comunidade **Viva o Linux**.
 
 O objetivo deste repositório é facilitar o acesso ao conteúdo, melhorar a legibilidade, organizar o passo a passo e preservar informações importantes para estudo técnico, uso profissional e futuras consultas.

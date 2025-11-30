@@ -48,11 +48,16 @@ Será solicitado:
 
   Prefixo para hostname dos clientes
 
-Sugestões:
+Sugestões (ltere ou mantenha o padrão):
 
-  NIS: **penguinzilla** (ou deixe o padrão)
-
-  Prefixo de host: **clientzilla**
+  NIS : 
+  ````
+  penguinzilla
+  ````
+  Prefixo de host: 
+  ````
+  clientzilla
+  ````
 
 ![Clonezilla inicial](../images/pagina-2/pag3-image2.png)
   

@@ -38,7 +38,7 @@ Ou simplesmente aceitar o padrão:
 ````
 drbl.name
 ````
-![Clonezilla inicial](../images/pagina-2/pag3-image1.png)
+![Clonezilla inicial](../images/pagina-3/pag3-image1.png)
 
 2️⃣ Nome NIS e prefixo dos clientes
 
@@ -59,7 +59,7 @@ Sugestões (ltere ou mantenha o padrão):
   clientzilla
   ````
 
-![Clonezilla inicial](../images/pagina-2/pag3-image2.png)
+![Clonezilla inicial](../images/pagina-3/pag3-image2.png)
   
 3️⃣ Interface conectada à Internet
 
@@ -71,7 +71,7 @@ eth0
 ````
 A outra interface (ex.: eth1) será usada para atender os clientes via PXE.
 
-![Clonezilla inicial](../images/pagina-2/pag3-image3.png)
+![Clonezilla inicial](../images/pagina-3/pag3-image3.png)
 
 4️⃣ Coleta de endereços MAC
 
@@ -94,7 +94,7 @@ N
 ````
 Você poderá fazer essa configuração manualmente mais tarde.
 
-![Clonezilla inicial](../images/pagina-2/pag3-image4.png)
+![Clonezilla inicial](../images/pagina-3/pag3-image4.png)
 
 
 5️⃣ Definindo faixa de IPs para os clientes
@@ -112,7 +112,7 @@ Confirme com:
 ````
 Y
 ````
-![Clonezilla inicial](../images/pagina-2/pag3-image5.png)
+![Clonezilla inicial](../images/pagina-3/pag3-image5.png)
 
 6️⃣ Exibição do layout da rede
 
@@ -122,7 +122,7 @@ Servidor DRBL <--> Clientes
 ````
 Pressione ENTER para continuar.
 
-![Clonezilla inicial](../images/pagina-2/pag3-image6.png)
+![Clonezilla inicial](../images/pagina-3/pag3-image6.png)
 
 7️⃣ Escolha do modo de operação
 
@@ -134,7 +134,7 @@ Escolha:
 ````
 2 – Clonezilla Server (sem diskless mode)
 ````
-![Clonezilla inicial](../images/pagina-2/pag3-image7.png)
+![Clonezilla inicial](../images/pagina-3/pag3-image7.png)
 
 8️⃣ Selecionando o modo de imagem do cliente
 
@@ -150,7 +150,7 @@ Depois, será pedido o diretório onde as imagens serão armazenadas:
 ````
 Você pode apenas pressionar ENTER para aceitar o padrão.
 
-![Clonezilla inicial](../images/pagina-2/pag3-image8.png)
+![Clonezilla inicial](../images/pagina-3/pag3-image8.png)
 
 9️⃣ Senha para iniciar o serviço nos clientes
 
@@ -164,7 +164,7 @@ N
 ````
 Mas, se quiser segurança extra, pode escolher **Y**.
 
-![Clonezilla inicial](../images/pagina-2/pag3-image9.png)
+![Clonezilla inicial](../images/pagina-3/pag3-image9.png)
 
 
 🔟 Configuração da tela de boot dos clientes
@@ -187,7 +187,7 @@ Y
 N
 ````
 
-![Clonezilla inicial](../images/pagina-2/pag3-image10.png)
+![Clonezilla inicial](../images/pagina-3/pag3-image10.png)
 
 1️⃣1️⃣ Verificação final e criação da configuração
 
@@ -201,7 +201,7 @@ Responda:
 ````
 Y
 ````
-![Clonezilla inicial](../images/pagina-2/pag3-image11.png)
+![Clonezilla inicial](../images/pagina-3/pag3-image11.png)
 
 Pronto!
 O servidor Clonezilla está configurado — mas ainda não iniciado.

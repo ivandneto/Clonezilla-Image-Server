@@ -1,0 +1,1 @@
+Licença conforme requisitos do Viva o Linux.

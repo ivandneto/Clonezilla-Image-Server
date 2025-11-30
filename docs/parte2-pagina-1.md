@@ -96,3 +96,6 @@ Reinicie o servidor e selecione o novo kernel.
 
 💡 Esta etapa é opcional.
 O Clonezilla SE funciona normalmente com o kernel padrão do Debian.
+
+➡ **[Próxima Página → Clonagem de Dispositivos](parte2-pagina-2.md)**  
+

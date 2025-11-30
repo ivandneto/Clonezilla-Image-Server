@@ -69,9 +69,10 @@ Esta parte cobre:
 - Integração com ambiente Windows  
 - salvamento remoto em SMB/CIFS  
 
+
 ---
 
-# 🏷 Créditos e Referências
+## 🔗 Fonte Original
 
 Conteúdo original (revisado e reestruturado) da comunidade:  
 👉 https://www.vivaolinux.com.br
@@ -81,6 +82,26 @@ Clonezilla Official:
 
 DRBL Official:  
 👉 https://drbl.org  
+
+
+Todo o conteúdo foi reorganizado e reformatado, mantendo crédito e referência conforme diretrizes do site.
+
+---
+
+## 📝 Licença
+
+A documentação deste repositório é distribuída sob a **Licença de Documentação Livre do Viva o Linux**, conforme os termos definidos no arquivo **LICENSE.md**.
+
+---
+
+## 💬 Contribuições
+
+Pull Requests são bem-vindos para:
+
+- correções  
+- reorganização  
+- melhorias de formatação  
+- adição de conteúdo complementar  
 
 ---
 
